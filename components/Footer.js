@@ -35,7 +35,7 @@ const Footer = () => {
         mt={["20px", null, null, "38px"]}
         fontWeight="extrabold"
         textAlign="center"
-        color="cyan.50"
+        color="white"
         zIndex="1"
       >
         Build products people love.
@@ -85,7 +85,7 @@ const Footer = () => {
           textAlign="center"
           fontSize={["sm", "sm", "lg", "lg"]}
         >
-          Copyright @ 2020 Sketch Media, all rights Reserved.
+          Copyright @ 2020 UtkalLabs, all rights Reserved.
         </Text>
       </Box>
     </Flex>

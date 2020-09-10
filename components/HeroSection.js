@@ -20,16 +20,17 @@ function HeroSection({
       <Box>
         <Heading
           fontSize="xl"
-          color="gray.200"
+          color="gray.50"
           fontWeight="extrabold"
           letterSpacing="0.20rem"
         >
           {title}
         </Heading>
         <Heading
-          py={["40px"]}
+          pt={["20px"]}
+          pb={["40px"]}
           fontSize="5xl"
-          color="blue.50"
+          color="purple.100"
           fontWeight="extrabold"
         >
           {heading}

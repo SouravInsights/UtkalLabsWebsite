@@ -77,8 +77,8 @@ const Home = ({ homepageCollection, serviceCollection }) => {
         >
           {serviceCollection.items.map((service) => (
             <GridCard
-              size={["2xl", "2xl", "3xl", "4xl"]}
-              color="gray.50"
+              size={["2xl", "2xl", "3xl", "3xl"]}
+              color="gray.100"
               key={service.slug}
               src={service.url}
               cardheading={service.serviceTitle}

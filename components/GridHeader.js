@@ -14,7 +14,7 @@ function GridHeader({ title, heading, description }) {
       </Heading>
       <Heading
         fontSize="42px"
-        color="#2858D4"
+        color="purple.100"
         fontWeight="extrabold"
         letterSpacing="widest"
         my="20px"

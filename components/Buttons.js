@@ -15,7 +15,7 @@ export function PrimaryButton({ text, height }) {
       borderRadius="22px"
       px="30px"
       outline="none"
-      bg="blue.50"
+      bg="purple.100"
       fontSize={["lg", "lg", "xl", "xl"]}
       fontWeight="bold"
       color="white"
@@ -49,11 +49,11 @@ export default function ContactButton({ text }) {
       h={["47px", "74px"]}
       w={["180px", "300px"]}
       bg="white"
+      borderRadius="22px"
       fontSize={["xl", "2xl", "3xl", "3xl"]}
       fontWeight="bold"
-      color="gray.50"
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 1 }}
+      color="purple.50"
+      whileTap={{ scale: 1.1 }}
       outline="none"
       zIndex="1"
     >

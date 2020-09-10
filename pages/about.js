@@ -34,7 +34,7 @@ const About = () => {
 
       <Box
         backgroundRepeat="no-repeat"
-        bgImage="url('https://res.cloudinary.com/emishalabs/image/upload/v1594749611/Sketch%20Media/aboutbg_upqxve.svg')"
+        bgImage="url('https://images.ctfassets.net/kn9wi23xyla8/65svuGDzVkti1ASedKumMq/91c27ad54915beb7e79b87440696df6d/aboutbg.svg')"
       >
         <Grid
           templateColumns={{

@@ -13,10 +13,16 @@ function GridCard({
 }) {
   return (
     <Box my="10px">
-      <Heading fontSize={size} mt="10px" color="#85EDEE" fontWeight="extrabold">
+      <Heading
+        fontSize={size}
+        mt="10px"
+        color="purple.100"
+        letterSpacing="wide"
+        fontWeight="extrabold"
+      >
         {cardheading}
       </Heading>
-      <Text my="6px" fontSize="18px" color={color} fontWeight="normal">
+      <Text my="6px" fontSize="18px" color={color} fontWeight="medium">
         {carddescription}
       </Text>
       {children}

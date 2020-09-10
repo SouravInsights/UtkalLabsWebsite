@@ -29,13 +29,13 @@
   position: relative;
 }
 .footer::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
   z-index: 0;
-  background-color: '#f00fff';
-  background: url(https://images.ctfassets.net/x7ylmnfcd6wz/29YIgTly30dcLs8CEAauI0/257db3cf180e95ff72ed1f921f3d50ee/rippedbgfooter_dark_.svg?h=250);
+  background-color: "#372865";
+  background: url(https://images.ctfassets.net/kn9wi23xyla8/6XcWeTfj1miIOG1h905Z3n/2a939c25d1c87463415c4418c334bacf/rippedbg-maroon.svg?h=250);
 }

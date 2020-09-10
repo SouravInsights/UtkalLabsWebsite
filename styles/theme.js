@@ -65,22 +65,20 @@ const customTheme = {
       200: "#999999",
       250: "#202020",
     },
-    offwhite: {
-      50: "#D2D2D2",
-    },
     yellow: {
       50: "#FFCC00",
       100: "#A3F76A",
     },
-    green: {
-      50: "#A3F76A",
-    },
     blue: {
       50: "#1B51F2",
     },
-    cyan: {
-      50: "#00b8ea",
-      100: "#0059aa",
+    purple: {
+      50: "#372865",
+      100: "#4D3A85",
+    },
+    pink: {
+      50: "#823F86",
+      200: "#F0AFC7",
     },
   },
   backgroundColor: {
