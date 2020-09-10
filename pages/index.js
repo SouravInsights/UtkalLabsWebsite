@@ -1,30 +1,11 @@
 import Head from "next/head";
-import {
-  Button,
-  Heading,
-  Box,
-  Text,
-  Drawer,
-  Image,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  DrawerHeader,
-  DrawerBody,
-  Input,
-  Stack,
-  FormLabel,
-  Textarea,
-  useDisclosure,
-} from "@chakra-ui/core";
+import { Button, Heading, Box, Image } from "@chakra-ui/core";
 import React, { useEffect } from "react";
 import Footer from "components/Footer";
 import GridSection from "@/components/GridSection";
 import GridCard from "components/GridCard";
 import GridHeader from "components/GridHeader";
 import GridCardSection from "@/components/GridCardSection";
-import WorksCard from "components/WorksCard";
-import Tag from "components/Tag";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { GraphQLClient } from "graphql-request";
 import HeroSection from "components/HeroSection";
@@ -36,8 +17,9 @@ const contentful = new GraphQLClient(
 );
 
 export async function getStaticProps() {
-  const { serviceCollection } = await contentful.request(
-    `{
+  const { homepageCollection, serviceCollection } = await contentful.request(
+    `
+     query {
       serviceCollection {
         items {
           slug
@@ -48,31 +30,45 @@ export async function getStaticProps() {
           }
         }
       }
-    }`
+      homepageCollection {
+        items {
+          heroTitle
+          heroHeading
+          heroDescription
+          heroImage {
+            url
+          }
+        }
+      }
+    }  
+    `
   );
   return {
     props: {
+      homepageCollection,
       serviceCollection,
     },
   };
 }
 
-const Home = ({ serviceCollection }) => {
+const Home = ({ homepageCollection, serviceCollection }) => {
   return (
     <>
       <Head>
         <title>Home - Sketch Media</title>
       </Head>
 
-      <HeroSection
-        title="Product Agency"
-        heading="Build products people love!"
-        description=" Let us maximize your business potential with the latest and innovative technologies."
-        src="https://images.ctfassets.net/x7ylmnfcd6wz/3HToCJNuqjS7ZF6Eu4tmCt/023496da489cf598b53049966340a778/become-one-of-us_2x.webp"
-        alt="home"
-      >
-        <PrimaryButton text="Work with us!" height="60px" />
-      </HeroSection>
+      {homepageCollection.items.map((home) => (
+        <HeroSection
+          title={home.heroTitle}
+          heading={home.heroHeading}
+          description={home.heroDescription}
+          src={home.heroImage.url}
+          alt="Hero Image"
+        >
+          <PrimaryButton text="Work with us!" height="60px" />
+        </HeroSection>
+      ))}
 
       <GridSection>
         <GridHeader title="SERVICES" heading="We can help you with" />

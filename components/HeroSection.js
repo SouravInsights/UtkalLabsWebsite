@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Heading, Text, Image } from "@chakra-ui/core";
+import { Box, Flex, Grid, Heading, Text, Image } from "@chakra-ui/core";
 
 function HeroSection({
   title,
@@ -15,7 +15,7 @@ function HeroSection({
       templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
       gap={10}
       px={["30px", "30px", "100px", "120px"]}
-      py={["30px", "30px", "80px", "80px"]}
+      py={["30px", "30px", "40px", "40px"]}
     >
       <Box>
         <Heading
@@ -44,9 +44,9 @@ function HeroSection({
         </Text>
         {children}
       </Box>
-      <Box justifyContent="flex-end">
-        <Image src={src} alt={alt} />
-      </Box>
+      <Flex justifyContent={["center", "center", "flex-end", "flex-end"]}>
+        <Image w="60%" src={src} alt={alt} />
+      </Flex>
     </Grid>
   );
 }
