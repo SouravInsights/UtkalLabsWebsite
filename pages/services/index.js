@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Button, Box } from "@chakra-ui/core";
+import { Button, Image, Box } from "@chakra-ui/core";
 import Footer from "@/components/Footer";
 import { GraphQLClient } from "graphql-request";
 import NextLink from "next/link";
@@ -41,7 +41,7 @@ const Services = ({ serviceCollection }) => {
   return (
     <Box>
       <Head>
-        <title>Services - Sketch Media</title>
+        <title>Services - UtkalLabs</title>
       </Head>
       <HeroSection
         title="SERVICES"
