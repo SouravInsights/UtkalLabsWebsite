@@ -16,44 +16,58 @@ const contentful = new GraphQLClient(
 );
 
 export async function getStaticProps() {
-  const { serviceCollection } = await contentful.request(
-    `{
-      serviceCollection {
-        items {
-          slug
-          serviceTitle
-          serviceDescription
-          serviceImage {
-            url
+  const { servicepageCollection, serviceCollection } = await contentful.request(
+    `
+      query {
+        serviceCollection {
+          items {
+            slug
+            serviceTitle
+            serviceDescription
+            serviceImage {
+              url
+            }
           }
         }
+        servicepageCollection {
+          items {
+            heroTitle
+            heroHeading
+            heroDescription
+            heroImage {
+              url
+            }
+          }
+        }      
       }
-    }`
+    `
   );
   return {
     props: {
+      servicepageCollection,
       serviceCollection,
     },
   };
 }
 
-const Services = ({ serviceCollection }) => {
+const Services = ({ servicepageCollection, serviceCollection }) => {
   return (
     <Box>
       <Head>
         <title>Services - UtkalLabs</title>
       </Head>
-      <HeroSection
-        title="SERVICES"
-        heading="We can help you build faster and ship sooner."
-        description=" At Sketch Media, we work closely with our clients to understand
-              their core problems and then design strategies that help them not
-              just ship great products but also to retain customers."
-        src="https://images.ctfassets.net/x7ylmnfcd6wz/3HToCJNuqjS7ZF6Eu4tmCt/023496da489cf598b53049966340a778/become-one-of-us_2x.webp"
-        alt="services"
-      >
-        <PrimaryButton text="View opportunities" height="60px" />
-      </HeroSection>
+
+      {servicepageCollection.items.map((service) => (
+        <HeroSection
+          title={service.heroTitle}
+          heading={service.heroHeading}
+          description={service.heroDescription}
+          src={service.heroImage.url}
+          alt="services-hero-image"
+        >
+          <PrimaryButton text="View opportunities" height="60px" />
+        </HeroSection>
+      ))}
 
       <GridSection>
         <GridHeader title="SERVICES" heading="We can help you with" />
