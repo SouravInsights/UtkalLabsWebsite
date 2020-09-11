@@ -76,12 +76,11 @@ const Services = ({ servicepageCollection, serviceCollection }) => {
         >
           {serviceCollection.items.map((service) => (
             <GridCard
-              size={["2xl", "2xl", "3xl", "4xl"]}
-              color="black"
+              size={["2xl", "2xl", "3xl", "3xl"]}
+              color="gray.100"
               src={service.url}
               cardheading={service.serviceTitle}
               carddescription={service.serviceDescription}
-              iconheight="200px"
             >
               {service.serviceImage && (
                 <Image
