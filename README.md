@@ -1,6 +1,4 @@
-# JS Makers MVP
-
-> A community for JS Developers to share projects, get feedback, write blogs, solve changes, get visible to potential gigs and grow together.
+# UtkalLabs
 
 ## Running Locally
 
