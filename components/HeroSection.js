@@ -14,7 +14,7 @@ function HeroSection({
     <Grid
       templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
       gap={10}
-      px={["30px", "30px", "100px", "120px"]}
+      px={["30px", "30px", "180px", "220px"]}
       py={["30px", "30px", "40px", "40px"]}
     >
       <Box>
@@ -45,8 +45,11 @@ function HeroSection({
         </Text>
         {children}
       </Box>
-      <Flex justifyContent={["center", "center", "flex-end", "flex-end"]}>
-        <Image w="60%" src={src} alt={alt} />
+      <Flex
+        //bg="#456789"
+        justifyContent={["center", "center", "flex-end", "flex-end"]}
+      >
+        <Image w="80%" h="80%" src={src} alt={alt} />
       </Flex>
     </Grid>
   );

@@ -60,7 +60,7 @@ const About = ({ aboutCollection }) => {
         bgImage="url('https://images.ctfassets.net/kn9wi23xyla8/65svuGDzVkti1ASedKumMq/91c27ad54915beb7e79b87440696df6d/aboutbg.svg')"
       >
         <Flex
-          px={["30px", "30px", "100px", "120px"]}
+          px={["30px", "30px", "180px", "220px"]}
           py={["30px", "30px", "40px", "40px"]}
           flexDirection={["column", "column", "row", "row"]}
         >
