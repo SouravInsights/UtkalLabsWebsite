@@ -85,9 +85,6 @@ const About = ({ aboutCollection }) => {
               Lorem ipsum. Lorem ipsum dollar sheet Lorem ipsum
             </Text>
           </Box>
-          <Box py={["30px", "30px", "0px", "0px"]}>
-            <Image src="https://images.ctfassets.net/x7ylmnfcd6wz/71VXHsSjP17BP7PRzAJPo0/0a4fa971350b12ff9290e5ab8daeac9e/mission.png?h=250" />
-          </Box>
         </Flex>
 
         <GridSection bgcolor="#F5F8FE">
