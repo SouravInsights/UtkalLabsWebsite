@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, Heading, Box, Image } from "@chakra-ui/core";
 
-function GridCard({ cardheading, carddescription, size, color, children }) {
+function GridCard({ cardheading, carddescription, size, children }) {
   return (
     <Box>
       <Heading
@@ -12,7 +12,7 @@ function GridCard({ cardheading, carddescription, size, color, children }) {
       >
         {cardheading}
       </Heading>
-      <Text py="12px" fontSize="18px" color={color} fontWeight="medium">
+      <Text py="12px" fontSize="22px" color="gray.100" fontWeight="normal">
         {carddescription}
       </Text>
       {children}

@@ -37,7 +37,7 @@ function HeroSection({
         </Heading>
         <Text
           fontSize={["xl", "xl", "2xl", "2xl"]}
-          color="gray.200"
+          color="gray.100"
           fontWeight="normal"
           pb={["40px"]}
         >

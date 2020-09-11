@@ -72,17 +72,18 @@ const About = ({ aboutCollection }) => {
               color="purple.100"
               fontWeight="extrabold"
             >
-              Our mission
+              What drives us
             </Heading>
             <Text
               fontSize={["xl", "xl", "2xl", "2xl"]}
-              color="gray.200"
+              color="gray.100"
               fontWeight="normal"
               pb={["40px"]}
               w="80%"
             >
-              Our awesome mission statement goes here. Lorem ipsum dollar sheet
-              Lorem ipsum. Lorem ipsum dollar sheet Lorem ipsum
+              Creating something digital from a good idea is what drives us. We
+              are open and honest. If we work with you, it will be on an equal
+              footing. We question the existing and create new.
             </Text>
           </Box>
         </Flex>
