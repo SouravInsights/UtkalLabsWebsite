@@ -12,7 +12,7 @@ function HeroSection({
 }) {
   return (
     <Grid
-      templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+      templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
       gap={10}
       px={["30px", "30px", "180px", "220px"]}
       py={["30px", "30px", "40px", "40px"]}
