@@ -4,7 +4,7 @@
 
 ```bash
 $ git clone 
-$ cd jsmakersmvp
+$ cd UtkalLabsWebsite
 $ npm run dev or yarn dev
 ```
 
