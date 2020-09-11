@@ -94,14 +94,14 @@ const Services = ({ servicepageCollection, serviceCollection }) => {
         </GridCardSection>
       </GridSection>
 
-      <GridSection bgcolor="gray.250">
+      <GridSection bgcolor="#F5F8FE">
         <GridHeader title="WORKFLOW" heading="How we get it done" />
         <GridCardSection
           columns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
         >
           <GridCard
             size={("xl", "xl", "2xl", "2xl")}
-            color="offwhite.50"
+            color="gray.100"
             cardheading="Clear project goals"
             carddescription="We’ll discuss what your business needs most to thrive, and focus on it during the whole project.."
             src="https://images.ctfassets.net/x7ylmnfcd6wz/1IhJijGG5TDrRWbAgBCqlq/2f79acebcf9709cae34d61b178c9e830/service_icon_05.webp?h=250"
@@ -109,7 +109,7 @@ const Services = ({ servicepageCollection, serviceCollection }) => {
           />
           <GridCard
             size={("xl", "xl", "2xl", "2xl")}
-            color="offwhite.50"
+            color="gray.100"
             cardheading="Perfect toolset"
             carddescription="Thanks to our expertise we’ll offer you a couple of technologies, that will suit your interests best."
             src="https://images.ctfassets.net/x7ylmnfcd6wz/1IhJijGG5TDrRWbAgBCqlq/2f79acebcf9709cae34d61b178c9e830/service_icon_05.webp?h=250"
@@ -117,7 +117,7 @@ const Services = ({ servicepageCollection, serviceCollection }) => {
           />
           <GridCard
             size={("xl", "xl", "2xl", "2xl")}
-            color="offwhite.50"
+            color="gray.100"
             cardheading="Transparent work environment"
             carddescription="Slack workspace, Jira board, Github repository, you’ll get access to all of these to always be in the know how your project’s going on."
             src="https://images.ctfassets.net/x7ylmnfcd6wz/1IhJijGG5TDrRWbAgBCqlq/2f79acebcf9709cae34d61b178c9e830/service_icon_05.webp?h=250"
@@ -125,7 +125,7 @@ const Services = ({ servicepageCollection, serviceCollection }) => {
           />
           <GridCard
             size={("xl", "xl", "2xl", "2xl")}
-            color="offwhite.50"
+            color="gray.100"
             cardheading="Afterproject relationship"
             carddescription="Our team will be happy to stay with you even after the project ends, handling your feature requests and maintenance, so you can grow your business in peace."
             src="https://images.ctfassets.net/x7ylmnfcd6wz/1IhJijGG5TDrRWbAgBCqlq/2f79acebcf9709cae34d61b178c9e830/service_icon_05.webp?h=250"
