@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Button, Heading, Box, Image } from "@chakra-ui/core";
+import { SimpleGrid, Heading, Box, Image } from "@chakra-ui/core";
 import React, { useEffect } from "react";
 import Footer from "components/Footer";
 import GridSection from "@/components/GridSection";
@@ -97,7 +97,7 @@ const Home = ({ homepageCollection, serviceCollection }) => {
         </GridCardSection>
       </GridSection>
 
-      <GridSection>
+      <GridSection bgcolor="#F5F8FE">
         <GridHeader title="WORKFLOW" heading="How we get it done" />
         <GridCardSection
           columns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
@@ -136,7 +136,7 @@ const Home = ({ homepageCollection, serviceCollection }) => {
           />
         </GridCardSection>
       </GridSection>
-
+      {/*
       <GridSection bgcolor="#F5F8FE" mb="60px">
         <GridHeader
           title="TECHNOLOGIES WE USE"
@@ -151,25 +151,34 @@ const Home = ({ homepageCollection, serviceCollection }) => {
           py={["10px", "10px", "10px", "10px"]}
           textAlign="center"
         >
-          DATA SOURCES
+          FRONTEND
         </Heading>
-        <GridCardSection
-          columns={{ base: "repeat(1, 1fr)", md: "repeat(4, 1fr)" }}
-        >
-          <Box size="16">
-            <Image src="https://images.ctfassets.net/oeqy1yheyozp/DrnSyghkwo0ym9d0VYCQL/55a7e5c8bed544d3eca57035de937eca/image.png?h=250" />
-          </Box>
-
+        <SimpleGrid columns={4} spacing="40px">
           <Box>
-            <Image src="https://images.ctfassets.net/oeqy1yheyozp/4JkEe3nO9cnvjgJUaZLugj/9cd1eea1cc47608b68991a8001b18de2/image.png?h=250" />
+            <Image
+              src="https://images.ctfassets.net/kn9wi23xyla8/3CZzHnwO7eOVjSG64SFHa5/090508af594c83373c97d281f193b6b7/react.png?h=250"
+              alt="reactjs"
+            />
           </Box>
-          <Box size="16">
-            <Image src="https://images.ctfassets.net/oeqy1yheyozp/6SFAcZLHo6ldHhqukZ4WhE/3d7a09a8e0fe76b88cf247ef485bde2e/image.png?h=250" />
+          <Box>
+            <Image
+              src="https://images.ctfassets.net/kn9wi23xyla8/3qwapEKPNMWffUAmnK6GOh/f4a3a6951da2ea1c5f72b5534ac0bfaa/next.png?h=250"
+              alt="nextjs"
+            />
           </Box>
-          <Box size="26">
-            <Image src="https://bejamas.io/static/2b59c17768180842d71f24a8f1b69ed0/ffac1/contentful.webp" />
+          <Box>
+            <Image
+              src="https://images.ctfassets.net/kn9wi23xyla8/6s9iFYT8aCo3UvUGrBGicT/f03cf05461f27522ef3ed1beaaa8b121/vue.png?h=250"
+              alt="vuejs"
+            />
           </Box>
-        </GridCardSection>
+          <Box>
+            <Image
+              src="https://images.ctfassets.net/kn9wi23xyla8/3NX1mMpGnexKO13k534A6I/253aac96692cb354f2c1a0f52247dd1a/nuxt.png?h=250"
+              alt="nuxtjs"
+            />
+          </Box>
+        </SimpleGrid>
         <Heading
           fontSize="xl"
           color="gray.100"
@@ -197,6 +206,7 @@ const Home = ({ homepageCollection, serviceCollection }) => {
           </Box>
         </GridCardSection>
       </GridSection>
+ */}
       <Footer />
     </>
   );
