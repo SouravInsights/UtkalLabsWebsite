@@ -137,7 +137,9 @@ const About = ({ aboutCollection }) => {
             bg="white"
             flexDirection="column"
             p={["20px", "20px", "30px", "30px"]}
-            boxShadow="0px 15px 30px rgba(0, 0, 0, 0.25)"
+            border="1px solid"
+            borderColor="#E5E0E0"
+            boxShadow="0px 20px 40px 10px rgba(222, 212, 212, 0.25)"
           >
             <Heading
               fontSize={["2xl", "2xl", "4xl", "4xl"]}
