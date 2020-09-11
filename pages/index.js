@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { SimpleGrid, Heading, Box, Image } from "@chakra-ui/core";
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "components/Footer";
 import GridSection from "@/components/GridSection";
 import GridCard from "components/GridCard";
@@ -9,7 +9,6 @@ import GridCardSection from "@/components/GridCardSection";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { GraphQLClient } from "graphql-request";
 import HeroSection from "components/HeroSection";
-import { TextButton } from "components/Buttons";
 import { PrimaryButton } from "components/Buttons";
 
 const contentful = new GraphQLClient(
@@ -55,7 +54,7 @@ const Home = ({ homepageCollection, serviceCollection }) => {
   return (
     <>
       <Head>
-        <title>Home - Sketch Media</title>
+        <title>Home - UtkalLabs</title>
       </Head>
 
       {homepageCollection.items.map((home) => (

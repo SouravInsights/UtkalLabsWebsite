@@ -20,7 +20,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About - Sketch Media</title>
+        <title>About - UtkalLabs</title>
       </Head>
       <HeroSection
         title="ABOUT"

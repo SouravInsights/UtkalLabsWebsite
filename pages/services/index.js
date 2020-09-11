@@ -1,15 +1,13 @@
 import Head from "next/head";
-import { Button, Image, Box } from "@chakra-ui/core";
+import { Image, Box } from "@chakra-ui/core";
 import Footer from "@/components/Footer";
 import { GraphQLClient } from "graphql-request";
-import NextLink from "next/link";
 import HeroSection from "components/HeroSection";
 import GridSection from "@/components/GridSection";
 import GridCard from "components/GridCard";
 import GridHeader from "components/GridHeader";
 import GridCardSection from "@/components/GridCardSection";
 import { PrimaryButton } from "components/Buttons";
-import { TextButton } from "components/Buttons";
 
 const contentful = new GraphQLClient(
   "https://graphql.contentful.com/content/v1/spaces/kn9wi23xyla8?access_token=Ctw9v2SvPjge4r5Eb-z5kqk7AaYV9fVtYhhsQwRcc8U"
