@@ -121,7 +121,7 @@ const Home = ({ homepageCollection, serviceCollection }) => {
             size={("xl", "xl", "2xl", "2xl")}
             color="gray.100"
             cardheading="Transparent work environment"
-            carddescription="Slack workspace, Jira board, Github repository, you’ll get access to all of these to always be in the know how your project’s going on."
+            carddescription="Slack workspace, Jira board, GitHub repository, you’ll get access to all of these to always be in the know how your project’s going on."
             src="https://images.ctfassets.net/x7ylmnfcd6wz/1IhJijGG5TDrRWbAgBCqlq/2f79acebcf9709cae34d61b178c9e830/service_icon_05.webp?h=250"
             alt="transparent-work-environment"
           />

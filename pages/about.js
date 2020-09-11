@@ -79,7 +79,7 @@ const About = ({ aboutCollection }) => {
               color="gray.100"
               fontWeight="normal"
               pb={["40px"]}
-              w="80%"
+              w={["100%", "100%", "80%", "80%"]}
             >
               Creating something digital from a good idea is what drives us. We
               are open and honest. If we work with you, it will be on an equal
@@ -113,13 +113,13 @@ const About = ({ aboutCollection }) => {
               size={("xl", "xl", "2xl", "2xl")}
               color="gray.100"
               cardheading=" Commitment and Responsibility"
-              carddescription="Remote work gives great possibilities, but comes with great responsibility. At Bejamas, each team member is responsible for a certain part of a project and it’s on them to deliver the best solution for it. For us it’s crucial to keep things this way and run projects as a well-oiled machine."
+              carddescription="Remote work gives great possibilities, but comes with great responsibility. At UtkalLabs, each team member is responsible for a certain part of a project and it’s on them to deliver the best solution for it. For us it’s crucial to keep things this way and run projects as a well-oiled machine."
             />
             <GridCard
               size={("xl", "xl", "2xl", "2xl")}
               color="gray.100"
               cardheading="Empathy and Unselfishness"
-              carddescription="Those are two very important factors at Bejamas. We believe that every person deserves valuable relationships with other people and a pleasant work environment. We try to help each other and give as much as we take ourselves."
+              carddescription="Those are two very important factors at UtkalLabs. We believe that every person deserves valuable relationships with other people and a pleasant work environment. We try to help each other and give as much as we take ourselves."
             />
           </GridCardSection>
         </GridSection>
